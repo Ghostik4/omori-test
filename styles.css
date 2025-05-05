@@ -10,18 +10,22 @@
   background-color: #681be4;
   transition: 0.3s;
 }
-  h1{
+h1{
   font-family:  "Exo 2", sans-serif;
+  padding-top: 15px;
 }
 h2{
   font-family:  "Exo 2", sans-serif;
+  padding-top: 15px;
 }
 h3{
   font-family:  "Exo 2", sans-serif;
+  padding: 5px;
 }
 p{
   font-family:   "Exo 2", sans-serif;
 }
+
 .content{
   width: 70%;
   margin: auto;
@@ -34,10 +38,16 @@ p{
 
 
 
-#gallery {
-    padding: 20px;
-  }
+
+.Steam{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
   
+.gallery{
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
   .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
@@ -169,4 +179,68 @@ p{
 
 .modal:target {
   display: block;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .nav {
+    height: 210px;
+    width: 210px;
+  }
+  .logo {
+    width: 285px;
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .gallery-grid img {
+    height: 200px;
+  }
+  footer {
+    margin-top: 100px;
+    padding: 20px 50px;
+  }
+  .menu li a {
+    font-size: 1.2em;
+  }
+}
+
+
+@media (max-width: 767px) {
+
+  .nav {
+    height: 230px;
+    width: 180px;
+  }
+  .logo {
+    width: 90%;
+    max-width: 250px;
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .gallery-grid img {
+    height: 150px;
+  }
+  footer {
+    margin-top: 50px;
+    padding: 15px 20px;
+  }
+  .menu li a {
+    font-size: 1em;
+    margin: 0 10px;
+  }
+  h1, h2 {
+    padding-top: 10px;
+  }
+  .thumbnail {
+    height: 300px;
+  }
+  .content{
+    padding: 20px;
+    margin: auto;
+    margin-top: 20px;
+  }
 }
